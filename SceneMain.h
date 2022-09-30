@@ -17,11 +17,11 @@ public:
 	void update();
 	// 毎フレームの描画
 	void draw();
-	
+
 private:
 
 	// プレイヤーのグラフィックハンドル
-	int m_hPlayerGraphic;
+	int m_hPlayerGraphic[12];
 	// プレイヤー
 	Player m_player;
 };

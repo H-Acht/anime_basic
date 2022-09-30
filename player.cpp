@@ -12,13 +12,12 @@ namespace
 
 Player::Player()
 {
-	// ‰Šú‰»
 	m_handle = -1;
 }
 
 Player::~Player()
 {
-	
+
 }
 
 void Player::init()
