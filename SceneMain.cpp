@@ -33,16 +33,14 @@ SceneMain::~SceneMain()
 // èâä˙âª
 void SceneMain::init()
 {
-	LoadDivGraph(kPlayerGraphicFileName, kPlayerGraphicDivNum,
-		kPlayerGraphicDivX, kPlayerGraphicDivY,
-		kPlayerGraphicSizeX, kPlayerGraphicSizeY, m_hPlayerGraphic);
+	LoadDivGraph(kPlayerGraphicFileName, Player::kGraphicDivNum,
+		Player::kGraphicDivX, Player::kGraphicDivY,
+		Player::kGraphicSizeX, Player::kGraphicSizeY, m_hPlayerGraphic);
 
-	for (int i = 0; i < kPlayerGraphicDivNum; i++)
+	for (int i = 0; i < Player::kGraphicDivNum; i++)
 	{
 		m_player.setHandle(i, m_hPlayerGraphic[i]);
 	}
-
-//	m_player.setHandle(m_hPlayerGraphic[4]);
 	m_player.init();
 }
 
